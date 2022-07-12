@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
+
+// * {
+
+// }
+
+:root {
+
+  body {
+    font-family: "Pathway Gothic One", sans-serif;
+    background-color: #F0FFFF;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+// Make variable
+$text-color: #fff;
+
+header {
+  color: white;
+  clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
+
+  @media only screen and (max-width: 768px) {
+    clip-path: none;
+  }
+
+  .jumbotron {
+    /*
+      *Backgorund Shorthand
+      !Ingat
+      backgorund: 
+        [backgorund-color] 
+        [background-image] 
+        [background-repeat] 
+        [background-attachment] 
+        [background-position];
+    */
+    background: url("../img/cover_bg_1b.jpg") no-repeat fixed center;
+    // background-color: rgb(0, 0, 0, 225);
+    // background-image: url("../img/cover_bg_2b.jpg");
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    background-size: cover;
+
+    -o-object-fit: cover;
+    object-fit: cover;
+    padding: 10rem 0;
+
+    h1 {
+      font-weight: 800;
+    }
+
+    h2 {
+      font-weight: 600;
+      word-spacing: 1rem;
+    }
+
+    .date {
+      p {
+        margin: 0;
+        font-size: 1.3rem;
+      }
+
+      hr {
+        width: 8rem;
+        margin: 2px auto;
+        border: 0.1rem solid;
+        border-radius: 1rem;
+        opacity: 80%;
+      }
+
+      @media only screen and (max-width: 768px) {
+        hr {
+          width: 10rem;
+          border: .1rem solid;
+        }
+      }
+
+    }
+
+
+    @media only screen and (max-width: 768px) {
+      background-position: right;
+    }
+  }
+}
+
+.d-lg-flex {
+  .custom {
+    .img-responsive {
+      width: 180px;
+      height: 180px;
+      border: 0.2rem solid #fff;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+
+    .bi {
+      color: #ffc0cb;
+    }
+  }
+}
+
+#akad {
+  .card {
+    border-radius: 0.6rem;
+    overflow: hidden;
+  }
+
+  .card:hover {
+    .card-title {
+      color: $text-color;
+    }
+
+    p {
+      color: $text-color;
+    }
+
+    background-color: pink;
+  }
+}
+
+#sumbangan {
+  .custom-bank {
+    margin-bottom: 1rem;
+    border: 2px solid #9254C8;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF2F2;
+
+    img {
+      width: 150px;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+
+    p {
+      text-align: center;
+      border: 2px solid;
+      background-color: #fff;
+      border-radius: .4rem;
+      margin: 0;
+    }
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  input[type="text"] {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: .4rem;
+  }
+}
+
+// Zoom Efek
+.custom-bank:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.custom-img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+
+}
+
+
+footer {
+  // font-family: 'Libre Franklin', sans-serif;
+  background-color: pink;
+}
+
+.border-pink {
+  border: 1px solid pink;
+}
+
+// Gray Effect
+.blur-effect {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+}
+
+// Floating Button
+.ngambang {
+
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #9254C8;
+  color: #FFF;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1;
+
+  &:hover {
+    background-color: pink;
+    color: black;
+  }
+}
+
+.text-pink {
+  color: pink;
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+#kartu-nikah {
+  .card {
+    border: 2px solid pink;
+  }
+
+  i {
+    font-size: 30px;
+  }
+
+  #demo {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+
+  .maps {
+    display: flex;
+    justify-content: center;
+
+    iframe {
+      width: 30rem;
+      height: 30rem;
+      border: 2px solid pink;
+      border-radius: .5rem;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
+  }
+
+  
+
+  .ucapan {
+    .bg-pink:hover {
+      background-color: #9254C8;
+      color: whitesmoke;
+    }
+  }
+}

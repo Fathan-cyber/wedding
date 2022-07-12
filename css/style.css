@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
+:root body {
+  font-family: "Pathway Gothic One", sans-serif;
+  background-color: #F0FFFF;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  color: white;
+  clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
+}
+@media only screen and (max-width: 768px) {
+  header {
+    clip-path: none;
+  }
+}
+header .jumbotron {
+  /*
+    *Backgorund Shorthand
+    !Ingat
+    backgorund: 
+      [backgorund-color] 
+      [background-image] 
+      [background-repeat] 
+      [background-attachment] 
+      [background-position];
+  */
+  background: url("../img/cover_bg_1b.jpg") no-repeat fixed center;
+  background-size: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
+  padding: 10rem 0;
+}
+header .jumbotron h1 {
+  font-weight: 800;
+}
+header .jumbotron h2 {
+  font-weight: 600;
+  word-spacing: 1rem;
+}
+header .jumbotron .date p {
+  margin: 0;
+  font-size: 1.3rem;
+}
+header .jumbotron .date hr {
+  width: 8rem;
+  margin: 2px auto;
+  border: 0.1rem solid;
+  border-radius: 1rem;
+  opacity: 80%;
+}
+@media only screen and (max-width: 768px) {
+  header .jumbotron .date hr {
+    width: 10rem;
+    border: 0.1rem solid;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header .jumbotron {
+    background-position: right;
+  }
+}
+
+.d-lg-flex .custom .img-responsive {
+  width: 180px;
+  height: 180px;
+  border: 0.2rem solid #fff;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.d-lg-flex .custom .bi {
+  color: #ffc0cb;
+}
+
+#akad .card {
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+#akad .card:hover {
+  background-color: pink;
+}
+#akad .card:hover .card-title {
+  color: #fff;
+}
+#akad .card:hover p {
+  color: #fff;
+}
+
+#sumbangan .custom-bank {
+  margin-bottom: 1rem;
+  border: 2px solid #9254C8;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF2F2;
+}
+#sumbangan .custom-bank img {
+  width: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+#sumbangan .custom-bank p {
+  text-align: center;
+  border: 2px solid;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  margin: 0;
+}
+#sumbangan .card {
+  padding: 1rem;
+}
+#sumbangan input[type=text] {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 0.4rem;
+}
+
+.custom-bank:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.custom-img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+footer {
+  background-color: pink;
+}
+
+.border-pink {
+  border: 1px solid pink;
+}
+
+.blur-effect {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.blur-effect:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.ngambang {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #9254C8;
+  color: #FFF;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1;
+}
+.ngambang:hover {
+  background-color: pink;
+  color: black;
+}
+
+.text-pink {
+  color: pink;
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+#kartu-nikah .card {
+  border: 2px solid pink;
+}
+#kartu-nikah i {
+  font-size: 30px;
+}
+#kartu-nikah #demo {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+#kartu-nikah .maps {
+  display: flex;
+  justify-content: center;
+}
+#kartu-nikah .maps iframe {
+  width: 30rem;
+  height: 30rem;
+  border: 2px solid pink;
+  border-radius: 0.5rem;
+}
+@media only screen and (max-width: 768px) {
+  #kartu-nikah .maps {
+    margin-top: 20px;
+  }
+}
+#kartu-nikah .ucapan .bg-pink:hover {
+  background-color: #9254C8;
+  color: whitesmoke;
+}
+
+/*# sourceMappingURL=style.css.map */
